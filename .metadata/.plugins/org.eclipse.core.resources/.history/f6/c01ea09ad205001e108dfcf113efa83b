@@ -1,0 +1,49 @@
+package com.bit.springboard.service.user.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+import com.bit.springboard.dto.UserDTO;
+import com.bit.springboard.service.user.UserService;
+
+@Service("userServiceImpl")
+public class UserServiceImpl implements UserService {
+	@Autowired
+	@Qualifier("userDAO")
+	UserDAO userDAO;
+
+	@Override
+	public void join(UserDTO userDTO) {
+		// TODO Auto-generated method stub
+		userDAO.join(userDTO);
+	}
+
+	@Override
+	public UserDTO getUser(int id, String password) {
+		return userDAO.getUser(id, password);
+	}
+
+	@Override
+	public int idCheck(String userId) {
+		// TODO Auto-generated method stub
+		return userDAO.idCheck(userId);
+	}
+
+	@Override
+	public UserDTO login(UserDTO userDTO) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

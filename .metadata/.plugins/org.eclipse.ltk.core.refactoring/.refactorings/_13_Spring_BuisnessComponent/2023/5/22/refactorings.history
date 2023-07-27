@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;_13_Spring_BuisnessComponent&apos;&#x0D;&#x0A;- Original project: &apos;_13_Spring_BuisnessComponent&apos;&#x0D;&#x0A;- Original element: &apos;_13_Spring_BuisnessComponent/src/main/java/com.bit.springboard.coupling&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bit.springboard.coupling" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1685511513150" subPackages="false" version="1.0"/>
+</session>

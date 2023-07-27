@@ -1,0 +1,22 @@
+package com.bit.springboard.coupling;
+
+public class AppleCarAudio implements CarAudio{
+
+	public AppleCarAudio() {
+		System.out.println("Apple carAudio 객체 생성");
+	}
+	
+	@Override
+	public void volumeUp() {
+		System.out.println("AppleCarAudio 소리 증가");
+		
+	}
+
+	@Override
+	public void volumeDown() {
+		System.out.println("AppleCarAudio 소리 감소");
+		
+	}
+	
+
+}

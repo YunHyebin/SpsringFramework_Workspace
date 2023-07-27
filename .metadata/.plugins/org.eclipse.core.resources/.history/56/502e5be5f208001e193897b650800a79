@@ -1,0 +1,8 @@
+package com.bit.springboard.dto;
+
+public class Creteria {
+	//현재 보고있는 페이지 번호
+	private int pageNum;
+	
+
+}

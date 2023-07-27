@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;getBoardList.jsp&apos; to &apos;getBoardList.jsp&apos;&#x0D;&#x0A;- Original project: &apos;_24_Spring_Board_Default&apos;&#x0D;&#x0A;- Destination element: &apos;getBoardList.jsp&apos;&#x0D;&#x0A;- Original element: &apos;getBoardList.jsp&apos;" description="Copy file" element1="src/main/webapp/WEB-INF/views/board/getBoardList.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1686538971467" target="/_24_Spring_Board_Default/src/main/webapp/WEB-INF/views/board/getBoardList.jsp" units="0" version="1.0"/>
+</session>

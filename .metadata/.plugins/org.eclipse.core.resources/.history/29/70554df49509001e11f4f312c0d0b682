@@ -1,0 +1,11 @@
+package com.bit.springboard.dto;
+
+public class BoardFileDTO {
+	private int boardNo;
+	private int boardFileNo;
+	private String boardFileName;
+	private String baordFilePath;
+	private String boardFileOrigin;
+	
+
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO">
+	<insert id="insertBoard"
+	parameterType="board">
+		INSERT INTO T_BOARD(
+			BOARD_TITLE,
+			BOARD_CONTENT,
+			BOARD_WRITER
+		) VALUES (
+			#{boardTitle},
+			#{boardContent},
+			#{boardWriter}
+		)
+	</insert>
+	
+	<update id="updateBoard"
+	parameterType="board">
+		UPDATE T_BOARD
+			SET
+				BOARD_TITLE = #{boardTitle},
+				BOARD_CONTENT = #{boardContent}
+			WHERE BOARD_NO = #{boardNo}
+	</update>
+	
+	<!-- 보내준 파라미터의 변수명을 그대로 사용한다. -->
+	<delete id="deleveBoard" parameterType="int">
+		DELETE FROM T_BOARD
+			WHERE BOARD_NO = #(boardNo)
+	</delete>
+	
+	<!-- returnType은 반환값이 있어야할 때
+			그리고 Alias로 설정해놓은 걸로 한다. -->
+	<select id="getBoard" parameterType="int" resultType="board">
+		SELECT BOARD_NO, BOARD_TITLE, BOARD_CONTENT, BOARD_WRITER, BOARD_REGDATE, BOARD_CNT
+			FROM T_BOARD
+			WHERE BOARD_NO = #(boardNo)
+	</select>
+	
+	<!-- resultType을 List가 아닌 board로 한 이유 -->
+	<!-- 하나씩 담아서 리스트로 담아주기 때문에 모든 행을 담아주는 것이 아닌 하나의 행을 담아줄 타입을 지정해야 한다. -->
+	<select id="getBoardList" resultType="board">
+		SELECT BOARD_NO, BOARD_TITLE, BOARD_CONTENT, BOARD_WRITER, BOARD_REGDATE, BOARD_CNT
+			FROM T_BOARD
+	</select>
+</mapper>

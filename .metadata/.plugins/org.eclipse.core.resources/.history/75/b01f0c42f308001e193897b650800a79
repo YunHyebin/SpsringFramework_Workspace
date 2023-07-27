@@ -1,0 +1,21 @@
+package com.bit.springboard.dto;
+
+public class Creteria {
+	//현재 보고있는 페이지 번호
+	private int pageNum;
+	//한 페이지에 표출할 게시글의 수
+	private int amount;
+	//페이지 표출 시작 번호
+	private int startNum;
+	
+	//생성자
+	public Creteria() {
+		//페이지번호와 개수가 지정이 안되었을 때 기본값
+		this(1, 10);
+	}
+	public Creteria(int pageNum, int amount) {
+		this.pageNum = pageNum;
+		this.amount = amount;
+	}
+
+}

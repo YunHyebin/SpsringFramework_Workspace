@@ -1,0 +1,10 @@
+package com.bit.springboard.dto;
+
+public class PageDTO {
+	//표출할 첫 페이지의 번호
+	private int startPage;
+	//표출할 끝 페이지 번호
+	private int endPage;
+	//이전, 다음 표출 여부
+	private boolean prev, next;
+}

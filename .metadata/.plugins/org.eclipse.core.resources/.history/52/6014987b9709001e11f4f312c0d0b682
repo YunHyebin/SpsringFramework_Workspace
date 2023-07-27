@@ -1,0 +1,48 @@
+package com.bit.springboard.dto;
+
+public class BoardFileDTO {
+	private int boardNo;
+	private int boardFileNo;
+	private String boardFileName;
+	private String baordFilePath;
+	private String boardFileOrigin;
+	
+	public int getBoardNo() {
+		return boardNo;
+	}
+	public void setBoardNo(int boardNo) {
+		this.boardNo = boardNo;
+	}
+	public int getBoardFileNo() {
+		return boardFileNo;
+	}
+	public void setBoardFileNo(int boardFileNo) {
+		this.boardFileNo = boardFileNo;
+	}
+	public String getBoardFileName() {
+		return boardFileName;
+	}
+	public void setBoardFileName(String boardFileName) {
+		this.boardFileName = boardFileName;
+	}
+	public String getBaordFilePath() {
+		return baordFilePath;
+	}
+	public void setBaordFilePath(String baordFilePath) {
+		this.baordFilePath = baordFilePath;
+	}
+	public String getBoardFileOrigin() {
+		return boardFileOrigin;
+	}
+	public void setBoardFileOrigin(String boardFileOrigin) {
+		this.boardFileOrigin = boardFileOrigin;
+	}
+	
+	@Override
+	public String toString() {
+		return "BoardFileDTO [boardNo=" + boardNo + ", boardFileNo=" + boardFileNo + ", boardFileName=" + boardFileName
+				+ ", baordFilePath=" + baordFilePath + ", boardFileOrigin=" + boardFileOrigin + "]";
+	}
+	
+
+}
